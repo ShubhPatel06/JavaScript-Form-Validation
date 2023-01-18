@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  background-color: #ff8080;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .box {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 26rem;
+}
+
+.box .form {
+  font-size: 1.1rem;
+  color: #0f2027;
+}
+
+.form h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.form button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.6rem;
+  border: none;
+  background-color: #25ea5d;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.9rem;
+}
+
+.input-container label {
+  margin-bottom: 0.4rem;
+}
+
+.input-container input {
+  border: 2px solid #d2d2d2;
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+  width: 100%;
+}
+
+.input-container input:focus {
+  outline: 0;
+}
+
+.input-container .error {
+  color: #ff3860;
+  font-size: 0.75rem;
+  height: 1rem;
+}
+
+.input-container.success input {
+  border-color: #09c372;
+}
+
+.input-container.error input {
+  border-color: #ff3860;
+}
+
+@media (max-width: 34em) {
+  .container {
+    padding: 0 1rem;
+  }
+}
