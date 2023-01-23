@@ -10,12 +10,26 @@ const lower = document.getElementById("lower");
 const number = document.getElementById("number");
 const special = document.getElementById("special");
 const long = document.getElementById("validLength");
+const show = document.querySelector(".show");
+const hide = document.querySelector(".hide");
 
 username.addEventListener("input", validateName);
 email.addEventListener("input", validateEmail);
 password.addEventListener("input", validatePassword);
 password.addEventListener("focus", function () {
   confirmation.classList.add("display");
+});
+
+show.addEventListener("click", () => {
+  show.style.display = "none";
+  hide.style.display = "block";
+  password.type = "text";
+});
+
+hide.addEventListener("click", () => {
+  hide.style.display = "none";
+  show.style.display = "block";
+  password.type = "password";
 });
 
 confirmPassword.addEventListener("input", validateConfirmPassword);
